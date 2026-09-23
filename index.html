@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Доработки 1С — Салия Роман</title>
+  <meta name="description" content="Описание доработок расширений мит_Автосервис и мит_Дополнительно для баз УТ и RANGERAUTO" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark">1С</span>
+        <span class="brand-text">Салия Роман · доработки</span>
+      </div>
+      <nav class="nav">
+        <a href="#bases">Базы</a>
+        <a href="#features">Доработки</a>
+        <a href="#update">Обновление</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">Документация расширений · обновляется по запросу</p>
+      <h1 id="project-title">Доработки 1С</h1>
+      <p class="lede" id="project-subtitle"></p>
+      <div class="hero-meta">
+        <span class="chip" id="updated-chip"></span>
+        <span class="chip chip-muted">Расширения, не правка типовой конфигурации</span>
+      </div>
+    </section>
+
+    <section id="bases" class="wrap section">
+      <div class="section-head">
+        <h2>Базы</h2>
+        <p>Две рабочие среды — у каждой своё расширение.</p>
+      </div>
+      <div class="bases-grid" id="bases-grid"></div>
+    </section>
+
+    <section id="features" class="wrap section">
+      <div class="section-head">
+        <h2>Доработки</h2>
+        <p>Название, зачем, что сделано и как пользоваться.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button type="button" class="filter is-active" data-base="all">Все</button>
+        <button type="button" class="filter" data-base="rangerauto">RANGERAUTO</button>
+        <button type="button" class="filter" data-base="ut">УТ</button>
+      </div>
+      <div class="features-list" id="features-list"></div>
+    </section>
+
+    <section id="update" class="wrap section section-note">
+      <div class="note-card">
+        <h2>Как обновляется эта страница</h2>
+        <ol>
+          <li>Список доработок лежит в файле <code>features.json</code>.</li>
+          <li>По вашей просьбе («обнови страницу доработок») агент правит JSON и перезаливает сайт на GitHub Pages.</li>
+          <li>Исходники расширений — в рабочем проекте; на эту страницу попадают только описания, без баз и паролей.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>saliya-roman-1c-dorabotki</span>
+      <a href="https://github.com/sania2007mav/saliya-roman-1c-dorabotki">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
