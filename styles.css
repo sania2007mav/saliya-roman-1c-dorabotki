@@ -152,6 +152,7 @@ body {
 }
 .base-card.amber::before { background: var(--amber); }
 .base-card.steel::before { background: var(--steel); }
+.base-card.green::before { background: var(--ok); }
 .base-card h3 { margin: 0 0 0.35rem; font-size: 1.2rem; }
 .base-card .aliases {
   margin: 0 0 0.9rem;
@@ -226,6 +227,7 @@ body {
 }
 .base-pill.amber { background: var(--amber-soft); color: var(--amber); }
 .base-pill.steel { background: var(--steel-soft); color: var(--steel); }
+.base-pill.green { background: rgba(125, 186, 122, 0.14); color: var(--ok); }
 
 .purpose {
   margin: 0 0 1rem;
@@ -260,6 +262,21 @@ body {
   color: var(--muted);
   font-size: 0.95rem;
 }
+.guide {
+  margin-top: 1.1rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+}
+.guide ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.guide li { margin: 0.35rem 0; }
+.guide li::marker { color: var(--amber); font-weight: 700; }
 
 .section-note { padding-bottom: 4rem; }
 .note-card {

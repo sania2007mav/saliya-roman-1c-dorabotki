@@ -63,6 +63,16 @@ function renderFeatures(data) {
 
     cols.append(done, how);
     card.append(cols);
+
+    if (feature.steps && feature.steps.length) {
+      const guide = el("div", "block guide");
+      guide.append(el("h4", null, "Пошаговая инструкция"));
+      const ol = el("ol");
+      for (const step of feature.steps) ol.append(el("li", null, step));
+      guide.append(ol);
+      card.append(guide);
+    }
+
     list.append(card);
   }
 }
